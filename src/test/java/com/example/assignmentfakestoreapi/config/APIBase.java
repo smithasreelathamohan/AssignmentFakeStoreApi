@@ -29,7 +29,6 @@ public class APIBase {
                 .block();
     }
 
-
     protected Product fetchProductById(int id) {
         return webClient.get()
                 .uri("/products/{id}", id)
